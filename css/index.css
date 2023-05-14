@@ -1,6 +1,6 @@
 @font-face {
     font-family: "cairofont";
-    src: url(../font/Cairo-Regular.ttf);
+    src: url(../fonts/Cairo-Regular.ttf);
 }
 
 body {
@@ -11,6 +11,10 @@ body {
 a {
     color: #000000;
     text-decoration: none !important;
+}
+
+.row {
+    margin: 0 !important;
 }
 
 button {
@@ -47,7 +51,9 @@ button:hover {
 .navbar .login {
     color: #bf40bf !important;
 }
-
+.modal .modal-header .close{
+    margin: -1rem auto -1rem -1rem !important;
+}
 .modal .modal-header .close:hover {
     color: #bf40bf !important;
     background-color: transparent !important;
@@ -57,26 +63,30 @@ input.form-control:focus,
 button:focus {
     box-shadow: none !important;
 }
-
+#headingTxt{
+    font-size: clamp(2vh, 3vh, 5vh);
+}
 .card .card-icons {
     position: relative;
 }
 
-time {
+.content time {
     position: absolute;
-    bottom: 10px;
-    left: 7px;
+    bottom: 25px;
+    left: 21px;
     color: white;
     background-color: #000;
-    padding: 0px 3px;
+    padding: 5px 3px;
+    font-size: 13px;
 }
 
 .card .fa-play {
     position: absolute;
     top: 43%;
-    right: 41%;
+    right: 48%;
     color: #2c3131c7;
     display: none;
+    font-size: 50px;
 }
 
 .card:hover {
@@ -90,14 +100,16 @@ time {
 .card .card-title {
     height: 50px;
     overflow: hidden;
+    padding-top: 15px;
+    font-weight: 900;
 }
 
 .card:hover .fa-play {
     display: inline;
 }
 
-.card-body {
-    min-width: 0;
+.card-body .card-footer  i {
+    margin: 0 5px;
 }
 
 .card .card-horizontal .card-body p {
@@ -109,7 +121,7 @@ time {
 .sidebar {
     position: fixed;
     z-index: 4;
-    right: -17rem;
+    right: -20rem;
     transition: all 0.5s ease-in-out;
     height: 100%;
     background-color: white;
@@ -137,6 +149,7 @@ time {
 .sidebar .list-group-item {
     transition: all 0.3s ease;
     width: 17rem;
+    text-align: start;
 }
 
 #wrap.toggled .sidebar {
@@ -151,6 +164,10 @@ time {
 .sidebar::-webkit-scrollbar-thumb {
     background-color: rgb(179, 179, 179);
     width: 8px;
+}
+
+ul.list-group.list-group-flush {
+    padding: 0 !important;
 }
 
 .layer {

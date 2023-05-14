@@ -17,9 +17,18 @@
     right: 18px;
 }
 
+.latest-download .card .card-title{
+    padding: 0;
+}
+
 time {
-    bottom: 65px;
+    bottom: 80px;
     font-size: 13px;
+    position: absolute;
+    left: 10px;
+    color: white;
+    background-color: #000;
+    padding: 2px;
 }
 
 @media (max-width:593px) {

@@ -11,103 +11,73 @@
 <link rel="stylesheet" href="./css/index.css">
 <link rel="stylesheet" href="./css/channel.css">
 </head>
-<body mt-5 dir="rtl" style="background-color: rgba(0, 0, 0, 0.5)">
-<div id="top-menu">
-<div class="container-fluid">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
-    <i class="fas fa-bars fa-lg" id="toggler"></i>
-    <b>
-    <a class="navbar-brand" href="index.html"
-        >يوتيوبي
-        <span class="video-icon p-1"
-        ><i class="fas fa-play-circle"></i> </span></a
-    ></b>
+<body mt-5 dir="rtl">
+<div class="layer"></div>
+ <div id="top-menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+            <i class="fas fa-bars fa-lg " id="toggler"></i>
+            <b> <a class="navbar-brand" href="index.html">يوتيوبي
+                    <span class="video-icon p-1"><i class="fas fa-play-circle"></i>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-lg-auto">
-        <li class="nav-item first-list-element">
-        <a class="nav-link px-3 ml-1 mr-3 h-6" href="index.html"
-            >الفيديوهات المقترحة</a
-        >
-        </li>
-        <li class="nav-item">
-        <a class="nav-link px-3 ml-1 ml-lg-3" href="#"
-            >المرفوعة حديثا</a
-        >
-        </li>
-        <li class="nav-item">
-        <a class="nav-link px-3 ml-1" href="#" aria-disabled="true"
-            >الفيديوهات الرائجة</a
-        >
-        </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-        <input
-        class="form-control mr-sm-2"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-        />
-        <button
-        class="btn btn-outline-info my-2 my-sm-0"
-        type="button"
-        onclick="location.href='search.html';"
-        >
-        ابحث
-        </button>
-    </form>
-    </div>
-    <i class="fas fa-search mr-4 search-icon"></i>
-    <a
-    class="nav-link login"
-    href="#"
-    aria-disabled="true"
-    data-toggle="modal"
-    data-target="#loginModal"
-    >تسجيل الدخول</a
-    >
-</nav>
-<input
-    class="form-control search-input px-0"
-    type="search"
-    placeholder="ابحث عن"
-/>
+                    </span></a></b>
 
-<div class="modal fade" id="loginModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-        <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
-        <button type="button" class="close" data-dismiss="modal">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        </div>
-        <div class="modal-body">
-        <form>
-            <div class="form-group">
-            <label for="email" class="col-form-label"
-                >البريد الالكتروني:</label
-            >
-            <input type="email" class="form-control" id="email" />
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link px-3 ml-1 mr-3" href="index.html">الفيديوهات المقترحة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  px-3 ml-1 ml-lg-3" href="#">المرفوعة حديثا</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link px-3 ml-1" href="#" aria-disabled="true">الفيديوهات الرائجة</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control ml-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button onclick="location.href='search.html';" class="btn btn-outline-info my-2 my-sm-0" type="submit">ابحث</button>
+                </form>
+
             </div>
-            <div class="form-group">
-            <label for="password" class="col-form-label"
-                >كلمة المرور:</label
-            >
-            <input type="password" class="form-control" id="password" />
+            <i class="fas fa-search mr-4 search-icon"></i>
+            <a class="nav-link login" href="#" aria-disabled="true" data-toggle="modal" data-target="#loginModal">تسجيل
+                الدخول</a>
+        </nav>
+        <input class="form-control search-input px-0" type="search" placeholder="ابحث عن">
+
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">البريد الالكتروني:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-form-label">كلمة المرور:</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="">نسيت كلمة المرور</a>
+                        <a href="" class="mx-auto">انشاء حساب</a>
+                        <button type="button" class="btn btn-primary">دخول</button>
+                    </div>
+                </div>
             </div>
-        </form>
-        </div>
-        <div class="modal-footer">
-        <a href="">نسيت كلمة المرور</a>
-        <a href="" class="mx-auto">انشاء حساب</a>
-        <button type="button" class="btn btn-primary">دخول</button>
         </div>
     </div>
-    </div>
-</div>
-</div>
-</div>
 
 <div class="row pt-4">
 <div id="wrap">
@@ -118,7 +88,7 @@
         الصفحة الرئيسية
     </a>
     <a href="index.html" class="list-group-item list-group-item-action">
-        <i class="fab fa-algolia mr-2 purple"></i>
+        <i class="fas fa-home mr-2 purple" aria-hidden="true"></i>
         الفیدوهات المقترحة
     </a>
     <a href="index.html" class="list-group-item list-group-item-action">
@@ -165,9 +135,9 @@
         <i class="fas fa-question-circle mr-2 purple"></i>
         مساعدة
     </a>
-    <a href="index.html" class="list-group-item list-group-item-action">
-        دورة تطوير واجهات المستخدم<br />
-        &copy; 2021 محمد قبلاوي
+    <a class="list-group-item list-group-item-action">
+        جميع الحقوق محفوظة <br />
+        &copy; 2023  سيف الاسلام
     </a>
     </ul>
 </div>
@@ -175,7 +145,7 @@
 </div>
 
 <div class="content m-4">
-<h4 class="py-5 text-center font-weight-bold display-4">الفيديوهات المقترحة</h4>
+<h4 class="py-5 text-center font-weight-bold display-4" id="headingTxt">الفيديوهات المقترحة</h4>
 <div class="row">
 <div class="col-sm-6 col-md-4 col-lg-3">
     <div class="card p-1 mb-4">
@@ -187,7 +157,7 @@
             alt="card-image"
         />
         <time>9:20</time>
-        
+        <i class="fas fa-play fa-2x" aria-hidden="true"></i>
         </a>
     </div>
     <a href="watch.html">
@@ -220,7 +190,9 @@
             src="./img/thumbnail/cordova.jpg"
             class="card-img-top"
             alt="card-image" />
-        <time>5:40</time></i></a>
+        <time>5:40</time></i>
+        <i class="fas fa-play fa-2x" aria-hidden="true"></i>
+    </a>
     </div>
     <a href="watch.html">
         <div class="card-body p-0">
@@ -229,8 +201,6 @@
             <small class="text-muted">
             
                 <i class="fas fa-film"></i><span>5 آلاف مشاهدة</span>
-
-
             <i class="far fa-clock"></i><span>قبل 5 اشهر</span>
             </small>
         </div>
@@ -257,6 +227,7 @@
             alt="card-image"
         />
         <time>3:10</time>
+        <i class="fas fa-play fa-2x" aria-hidden="true"></i>
         </a>
     </div>
     <a href="watch.html">
@@ -264,9 +235,10 @@
         <p class="card-title">افضل طريقة لربح كثير من المال</p>
         <div class="card-footer">
             <small class="text-muted">
-                <i class="fas fa-film"></i
-                ><span>4 آلاف مشاهدة</span></span
-            <i class="far fa-clock"></i><span>قبل 3 اشهر</span>
+                <i class="fas fa-film"></i>
+                <span>4 آلاف مشاهدة</span></span>
+            <i class="far fa-clock"></i>
+            <span>قبل 3 اشهر</span>
             </small>
         </div>
         <a href="channel.html" class="channel-img">
@@ -291,6 +263,7 @@
             class="card-img-top"
             alt="card-image" />
         <time>4:00</time>
+        <i class="fas fa-play fa-2x" aria-hidden="true">
         </i></a>
     </div>
     <a href="watch.html">
@@ -606,9 +579,10 @@
 </div>
 </div>
 <!-- ****** js ****** -->
-<script src="js/jquery.slim.min.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="./fontawesome-free-5.15.1-web/js/fontawesome.min.js"></script>
 <script src="./js/index.js"></script>
-/body>
+</body>
 </html>

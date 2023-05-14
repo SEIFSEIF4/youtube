@@ -9,8 +9,16 @@
 }
 
 time {
+    position: absolute;
+    color: #fff;
+    background-color: #000;
+    padding: 0px 3px;
     bottom: 7px;
     left: 29px;
+}
+
+.history-page .card-body {
+    overflow: hidden;
 }
 
 .history-page .remove {
@@ -20,8 +28,19 @@ time {
     color: #2c3131c7;
     cursor: pointer;
 }
+.history-page  .fa-play {
+    top: 35%;
+    right: 40%;
+}
 
-@media (max-width:767px) {
+.history-page .card:hover i.remove {
+    padding: 3px 5px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+}
+
+@media (max-width: 767px) {
     .card .card-top-image {
         width: 100%;
     }
@@ -33,16 +52,15 @@ time {
     .card .card-horizontal .fa-play {
         right: 48%;
     }
-
 }
 
-@media (min-width:768px) and (max-width:1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .card .card-horizontal .card-body .channel-img {
         display: block;
         margin-top: 10px;
     }
 
-    .card .card-horizontal .card-body .channel-img>img {
+    .card .card-horizontal .card-body .channel-img > img {
         margin-right: 0px !important;
     }
 
@@ -54,9 +72,8 @@ time {
     }
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .card {
         margin-top: 30px;
     }
-
 }

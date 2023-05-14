@@ -7,32 +7,29 @@ $(document).ready(function () {
     });
 
     $("#toggler").click(function () {
-        $('#wrap').toggleClass('toggled');
-        var right = $('.sidebar').css("right");
-        if (right == '0px') {
-            $('.sidebar').css({
-                'right': '-17rem'
+        $("#wrap").toggleClass("toggled");
+        var right = $(".sidebar").css("right");
+        if (right == "0px") {
+            $(".sidebar").css({
+                right: "-25rem",
             });
-            $('.layer').fadeOut();
+            $(".layer").fadeOut();
         } else {
-            $('.sidebar').css({
-                'right': '0'
+            $(".sidebar").css({
+                right: "0",
             });
-            $('.layer').fadeIn();
+            $(".layer").fadeIn();
         }
-
     });
 
-    $('.layer').click(function () {
-        $('.sidebar').css({
-            'right': '-17rem'
+    $(".layer").click(function () {
+        $(".sidebar").css({
+            right: "-25rem",
         });
-        $('.layer').fadeOut();
+        $(".layer").fadeOut();
     });
 
     $(".search-icon").click(function () {
-        $('.search-input').slideToggle("slow");
+        $(".search-input").slideToggle("slow");
     });
-
-
 });
